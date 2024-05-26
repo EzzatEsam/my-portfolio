@@ -24,7 +24,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <MantineProvider>
           <NavigationProgress />
-          <BasicAppShell children={children} />
+          <BasicAppShell>{children}</BasicAppShell>
         </MantineProvider>
       </body>
     </html>
