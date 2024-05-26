@@ -5,13 +5,13 @@ import SkillSetView from "@/components/skillSetComponent";
 export default function Skills() {
   return (
     <Flex align="center" justify="center" direction={"column"} gap={"lg"}>
-      <ul style={{ listStyle: "none" }}>
-        {mySkills.map((skillSet) => (
-          <li key={skillSet.name}>
-            <SkillSetView skillSet={skillSet} />
-          </li>
-        ))}
-      </ul>
+      {/* <ul style={{ listStyle: "none" }}> */}
+      {mySkills.map((skillSet) => (
+        // <li key={skillSet.name}>
+        <SkillSetView skillSet={skillSet} key={skillSet.name} />
+        // </li>
+      ))}
+      {/* </ul> */}
     </Flex>
   );
 }
