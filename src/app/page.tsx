@@ -1,95 +1,42 @@
-import Image from "next/image";
-import styles from "./page.module.css";
-
-export default function Home() {
+import { Flex, Image, Group } from "@mantine/core";
+import Link from "next/link";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { MdOutlineAlternateEmail } from "react-icons/md";
+import { myLinkedin, myGithub, myEmail } from "@/lib/data";
+export default function About() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
+    <Flex
+      mih={50}
+      gap="xl"
+      justify="center"
+      align="center"
+      direction="row"
+      wrap="wrap"
+    >
+      <div style={{ width: "30vw" }}>
+        <h1>Hi there</h1>
+        <h2>I am Ezzat Esam</h2>
         <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
+          I am an AI engineer specialized in computer vision, desktop app
+          developer and a game dev hobbyist. Proficient in Python, C#,
+          Typescript, and Go.
         </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
       </div>
+      <Flex direction={"column"} align={"center"} justify={"center"} gap={"lg"}>
+        <Image src="/pic.png" h={300} style={{ borderRadius: "50%" }}></Image>
+        <Group>
+          <Link href={myLinkedin}>
+            <FaLinkedin size={30} color="#0A66C2"></FaLinkedin>
+          </Link>
+          <Link href={myGithub}>
+            <FaGithub size={30} color="black"></FaGithub>
+          </Link>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+          <Link href={"mailto:" + myEmail}>
+            <MdOutlineAlternateEmail size={30} color="red" />
+          </Link>
+        </Group>
+      </Flex>
+    </Flex>
   );
 }
