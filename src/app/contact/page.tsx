@@ -29,7 +29,7 @@ export default function Home() {
       </Text>
       <Divider my={"md"} label="Phone" />
       <Text> +20 112 278 8260 </Text>
-      <Text> +20 112 278 8260 </Text>
+      <Text> +20 101 647 5725 </Text>
     </Stack>
   );
 }
