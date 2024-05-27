@@ -1,4 +1,4 @@
-import { SkillSet } from "./SkillSet";
+import { SkillSet } from "../types/SkillSet";
 import {
   SiPytorch,
   SiNumpy,
@@ -14,6 +14,7 @@ import { FaGolang } from "react-icons/fa6";
 import * as IconsFa from "react-icons/fa";
 import * as IconsSi from "react-icons/si";
 import { TbBrandCpp } from "react-icons/tb";
+import { ProjectData } from "@/types/ProjectData";
 
 export const myName = "Ezzat Esam Elsayed";
 export const myTitle = "Communication and Information Engineer";
@@ -140,5 +141,44 @@ export const mySkills: SkillSet[] = [
         logo: <IconsSi.SiGodotengine size={25} color="#53A4E0" />,
       },
     ],
+  },
+];
+
+export const MyProjects: ProjectData[] = [
+  {
+    name: "MPEG Encoder/Decoder",
+    description:
+      "Implemented the H264 standard encoder and decoder for video compression/decompression with varying compression ratio up to 97%",
+    technologies: ["Python", "OpenCV", "Numpy"],
+    image:
+      "https://raw.githubusercontent.com/EzzatEsam/MPEG-EncoderDecoderPython/main/2024-05-20-06-34-49.png",
+    link: "https://github.com/EzzatEsam/MPEG-EncoderDecoderPython",
+  },
+  {
+    name: "Pumbkin chaos - A top down 2d shooter game",
+    description:
+      " Developed a game for an online game jam and ranked the 46th over 370 submissions. \n The game utilized various mechanics and features including increasing difficulty, various enemy types, a leveling system and more",
+    technologies: ["C#", "Godot"],
+    image:
+      "https://raw.githubusercontent.com/TeamFMOLs/PumpkinChaos/main/screenshot1.png",
+    link: "https://github.com/TeamFMOLs/PumpkinChaos",
+  },
+  {
+    name: "ZC Navigator",
+    description:
+      "This was a university project for Artificial intelligence course. The goal was to create a simple program to provide paths when navigation the campus. \n The program uses search techniques like DFS, BFS, A* and more.",
+    technologies: ["Python", "numpy", "tkinter"],
+    image:
+      "https://raw.githubusercontent.com/EzzatEsam/Ai-Project-ZC-Navigator/main/image.png",
+    link: "https://github.com/EzzatEsam/Ai-Project-ZC-Navigator",
+  },
+  {
+    name: "OP.GG scrapper",
+    description:
+      "this script provides functionaliteis for scrapping info from OP.GG and saves to csv for further analysis",
+    image:
+      "https://raw.githubusercontent.com/EzzatEsam/OP.GG-Scrapper/main/screenshots/champ.png",
+    link: "https://github.com/EzzatEsam/OP.GG-Scrapper",
+    technologies: ["Python", "pandas", "selenium", "beautifulsoup"],
   },
 ];

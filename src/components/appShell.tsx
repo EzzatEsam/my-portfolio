@@ -1,4 +1,5 @@
 "use client";
+import { myName } from "@/lib/data";
 import {
   AppShell,
   Burger,
@@ -13,7 +14,6 @@ import {
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 
-
 export default function BasicAppShell(props: any) {
   const [opened, { toggle }] = useDisclosure();
 
@@ -23,10 +23,10 @@ export default function BasicAppShell(props: any) {
       navbar={{ width: 300, breakpoint: "sm", collapsed: { mobile: !opened } }}
       padding="md"
     >
-      <AppShell.Header>
+      <AppShell.Header  >
         <Group h="100%" px="md">
           <Burger opened={opened} onClick={toggle} hiddenFrom="sm" size="sm" />
-          <Text>Ezzat Esam Elsayed</Text>
+          <Text>{myName} - Portfolio</Text>
         </Group>
       </AppShell.Header>
       <AppShell.Navbar p="md">
