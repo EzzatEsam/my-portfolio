@@ -1,4 +1,4 @@
-import { SkillSet } from "@/lib/SkillSet";
+import { SkillSet } from "@/types/SkillSet";
 import { Card, Flex, Group, Text } from "@mantine/core";
 
 export default function SkillSetView({ skillSet }: { skillSet: SkillSet }) {
