@@ -15,6 +15,7 @@ import * as IconsFa from "react-icons/fa";
 import * as IconsSi from "react-icons/si";
 import { TbBrandCpp } from "react-icons/tb";
 import { ProjectData } from "@/types/ProjectData";
+import { DiSpark } from "react-icons/di";
 
 export const myName = "Ezzat Esam Elsayed";
 export const myTitle = "Communication and Information Engineer";
@@ -71,6 +72,15 @@ export const mySkills: SkillSet[] = [
       {
         name: "Scikit-learn",
         logo: <SiScikitlearn size={25} color="#F09437" />,
+      },
+      {
+        name: "PySpark",
+        logo: <DiSpark size={25} />,
+      },
+      {
+        name: "Hadoop",
+
+        logo: <IconsSi.SiApachehadoop size={25}  />,
       },
       // {
       //   name: "OpenCV",
