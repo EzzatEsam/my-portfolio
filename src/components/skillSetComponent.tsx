@@ -5,7 +5,7 @@ export default function SkillSetView({ skillSet }: { skillSet: SkillSet }) {
   return (
     <Flex align="center" justify="center" direction={"column"} gap={"lg"}>
       <Text size="lg">{skillSet.name}</Text>
-      <Group>
+      <Group align="center" justify="center">
         {skillSet.innerSKills.map((skill) => (
           <Card
             shadow="sm"
