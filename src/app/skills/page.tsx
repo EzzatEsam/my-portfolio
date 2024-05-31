@@ -1,5 +1,5 @@
 "use client";
-import { Flex, Text } from "@mantine/core";
+import { Divider, Flex, Text } from "@mantine/core";
 import { mySkills } from "@/lib/data";
 import SkillSetView from "@/components/skillSetComponent";
 export default function Skills() {
@@ -8,7 +8,10 @@ export default function Skills() {
       {/* <ul style={{ listStyle: "none" }}> */}
       {mySkills.map((skillSet) => (
         // <li key={skillSet.name}>
-        <SkillSetView skillSet={skillSet} key={skillSet.name} />
+        <>
+          <SkillSetView skillSet={skillSet} key={skillSet.name} />
+          {/* <Divider my="md" key={`divider-${skillSet.name}`} /> */}
+        </>
         // </li>
       ))}
       {/* </ul> */}

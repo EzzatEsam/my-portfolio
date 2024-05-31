@@ -15,6 +15,7 @@ export default function ProjectCard({
       target="_blank"
       withBorder
       w={300}
+      h={500}
     >
       <Card.Section>
         <Image src={projectData.image} height={200} alt={projectData.name} />
