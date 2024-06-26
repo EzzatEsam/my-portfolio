@@ -80,7 +80,7 @@ export const mySkills: SkillSet[] = [
       {
         name: "Hadoop",
 
-        logo: <IconsSi.SiApachehadoop size={25}  />,
+        logo: <IconsSi.SiApachehadoop size={25} />,
       },
       // {
       //   name: "OpenCV",
@@ -199,5 +199,23 @@ export const MyProjects: ProjectData[] = [
       "https://raw.githubusercontent.com/EzzatEsam/Zc-Transcript-Analyzer/main/Screenshots/program.png",
     link: "https://github.com/EzzatEsam/Zc-Transcript-Analyzer",
     technologies: ["Go", "Fyne (GUI library)"],
+  },
+  {
+    name: "Todo list application  backend API",
+    description:
+      "An API for a todo list application, supports accounts creation, having multiple todo groups (projects) per account and each group having multiple todos. The API is authenticated with .NET's identity system and secured with JWT tokens.",
+    image:
+      "https://raw.githubusercontent.com/EzzatEsam/TodoApplicationBackendAspDotNet/main/Github/Screenshots/2024-06-26-21-38-48.png",
+    link: "https://github.com/EzzatEsam/TodoApplicationBackendAspDotNet",
+    technologies: ["C#", "ASP.NET Core", "Entity Framework core"],
+  },
+  {
+    name: "Todo list application frontend",
+    description:
+      "A single page react app for a todo list application, styled with tailwindcss",
+    image:
+      "https://raw.githubusercontent.com/EzzatEsam/TodoAppFrontendReact/main/Github/Screenshots/Home1.png",
+    link: "https://github.com/EzzatEsam/TodoAppFrontendReact",
+    technologies: ["React", "Tailwindcss"],
   },
 ];
